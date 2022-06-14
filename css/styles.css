@@ -39,9 +39,15 @@ body{
     padding-right: 15px;
  }
 
+ img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+ }
+
 
 /* Header */
-.header-page .container{
+.header-page{
      border-bottom: 1px solid #ECECEC;   
      
 }
@@ -167,14 +173,20 @@ margin-right: 50px;
     padding-bottom: 94px;
    }   
 
-
-.features.section{
-    padding-bottom: 0;
-} 
-
 .features-list {
     display:flex;
 }
+
+.features-item{
+    width: 270px;
+    margin-right: 30px;
+
+}
+
+.features-item:last-child{
+    margin-right: 0;
+}
+
 .features-name {
     margin-top: 0;
     margin-bottom: 10px;
@@ -204,6 +216,9 @@ margin-right: 50px;
     letter-spacing: 0.03em;
 }
 
+.skills.section{
+    padding-top: 0;
+}
 
 .skill-list {
     display: flex;
@@ -225,9 +240,7 @@ margin-right: 50px;
     background-color: var(--secondary-background-color);
 }
 
-.team-title{
-    padding-top: 94px;
-}
+
 .team-list{
     display: flex;
     
@@ -244,7 +257,13 @@ margin-right: 50px;
 
 
 .team-card{
-    margin-bottom: 30px;
+    margin-bottom: 0;
+}
+
+.team-item .container{
+    width: 270px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .team-name{
@@ -261,7 +280,6 @@ margin-right: 50px;
 .team-text{
     margin-top: 0;
     margin-bottom: 0;
-    padding-bottom: 30px;
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
@@ -273,16 +291,15 @@ margin-right: 50px;
 /* Footer */
 .footer {
     background-color: var(--background-color);
-}
-
-.footer .container{
-    margin-top: 0;
-    margin-bottom: 0;
     padding: 60px 15px;
 }
 
+
+
 .logo.bottom{
-padding-bottom: 20px;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-bottom: 20px;
 }
 
 .logo-bottom {
@@ -321,7 +338,7 @@ padding-bottom: 20px;
 .filter-list{
     display: flex;
     justify-content: center;
-    padding-bottom: 50px;
+    margin-bottom: 50px;
 
 }
 
@@ -375,6 +392,15 @@ padding-bottom: 20px;
 
 .project-item:nth-last-child(-n+3){
     margin-bottom: 0;
+}
+
+.project-item .container{
+    max-width: 370px;
+    padding: 20px 24px;
+    border-left: 1px solid #EEEEEE;
+    border-bottom: 1px solid #EEEEEE;
+    border-right: 1px solid #EEEEEE;
+
 }
 
 .project-title{
